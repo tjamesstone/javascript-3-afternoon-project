@@ -52,16 +52,17 @@ var employees = [
 
 //Code Here
 
-let employeeUpdater = employees.filter(function(el, i, arr){
-  if(el.firstName === 'Theo'){
-    employees.splice(2,1)
-  } else if (el.firstName === 'Lorie'){
-el.department = 'HR'
-  }
-  
-})
+ function employeeUpdater () {
+  for(i = 0; i < employees.length; i++){
+    if(employees[i].firstName === 'Theo'){
+      employees.splice(i,1)
+    } else if (employees[i].firstName === 'Lorie'){
+      employees[i].department = 'HR'
+    } 
+  } return employees
+}
 
-return employeeUpdater
+
 
 
 ////////// PROBLEM 2 //////////
@@ -78,18 +79,19 @@ var workplaceAccidents = [12, 56, 44, 3, 29, 56, 56, 3, 7, 12];
     3. Return the updated array.
 */
 
-let removeDuplicates = []
-for(let i = workplaceAccidents.length-1; i >= 0;  i--){
+function removeDuplicates (){
+for(let i = 0; i < workplaceAccidents.length;  i++){
   for(let j = workplaceAccidents.length-1; j >= 0; j--){
     if(workplaceAccidents[i] === workplaceAccidents[j] && i!==j){
-      workplaceAccidents.splice(i,1)
+      workplaceAccidents.splice(j,1)
     }
   }
+} return workplaceAccidents
 }
 
 
 
-return removeDuplicates
+
 
 
 ////////// PROBLEM 3 //////////
