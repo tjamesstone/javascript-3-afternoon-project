@@ -2,7 +2,6 @@
   Once you complete a problem, refresh ./for-in-delete.html in your browser and check to see if the problem's test(s) are passing.
   Passed tests will be indicated by a green circle.
   Failed tests will be indicated by a red X.
-
   You can refresh the page at any time to re-run all the tests.
 */
 
@@ -41,12 +40,7 @@ for(var key in values) {
 
 function showValues( obj ) {
   //Code Here
-  for (var key in values){
-    return( one + two + three + four + five)
-  }
-
 }
-
 
 
 
@@ -58,14 +52,8 @@ function showValues( obj ) {
   Return the updated object.
 */
 
-let greaterThan10 = function(obj){
-  for(var prop in obj){
-    if (obj[prop] > 10){
-      obj[prop] = 0
-    }
-  }
-}
-return greaterThan10
+//Code Here
+
 
 
 ////////// PROBLEM 3 //////////
@@ -164,10 +152,7 @@ var deleteTheBigNumbers = {
   Write a for in loop that loops over this object. Each property will have a sentence as it's value.
   If the property value does not contain the word 'treasure', delete the property.
   Return the updated object.
-
   (hint: the method includes() may be of use...)
 */
 
 //Code Here
-
-
