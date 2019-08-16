@@ -55,6 +55,12 @@ function greeting( obj ) {
 
 //Code Here
 
+function totalPopulation(obj){
+  let {utah, california, texas, arizona} = obj
+  let totalNumber = utah + california + texas + arizona
+  return totalNumber
+}
+
 
 
 ////////// PROBLEM 4 //////////
@@ -69,6 +75,11 @@ function greeting( obj ) {
 
 //Code Here
 
+function ingredients (obj){
+  let {carb, fat, protein} = obj
+  let arr = [carb, fat, protein]
+  return arr
+}
 
 
 ////////// PROBLEM 5 //////////
