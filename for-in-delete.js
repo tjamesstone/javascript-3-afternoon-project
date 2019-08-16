@@ -42,7 +42,7 @@ for(var key in values) {
 function showValues( obj ) {
   //Code Here
   for (var key in values){
-    return(values.key)
+    return(values[key])
   }
 
 }
@@ -63,9 +63,9 @@ let greaterThan10 = function(obj){
     if (obj[prop] > 10){
       obj[prop] = 0
     }
-  }return greaterThan10
+  }
 }
-
+return greaterThan10
 
 
 ////////// PROBLEM 3 //////////

@@ -22,7 +22,11 @@ const mixedNumbers = [6,3,1,7,5,2,6,8,9,4,2,7,9,3,1,8,4,3];
 
 //Code Here
 var evenNumbers = mixedNumbers.filter(function(el, i, arr){
-  return (mixedNumbers.el %2 === 0)
+  if (el %2 === 0) {
+    return true
+  } else {
+    return false
+  }
 }
   )
 
