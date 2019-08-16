@@ -53,6 +53,13 @@ function showValues( obj ) {
 */
 
 //Code Here
+function greaterThan10 (obj){
+for(let prop in obj) {
+  if(obj[prop] > 10) {
+    obj[prop] = 0
+  }
+}return obj
+}
 
 
 
