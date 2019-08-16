@@ -19,6 +19,11 @@ let product = {
 
 // code here
 
+let productCopy = Object.assign({},product);
+
+
+
+
 
 
 
@@ -29,7 +34,7 @@ let product = {
 let colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
 
 // code here
-
+let colorsCopy = Object.assign({},colors);
 
 
 
