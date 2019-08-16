@@ -11,34 +11,34 @@
 // Do not edit the code below.
 var employees = [
   {
-    "firstName": "Von",
-    "lastName": "Budibent",
-    "email": "vbudibent0@163.com",
-    "department": "Sales"
+    firstName: "Von",
+    lastName: "Budibent",
+    email: "vbudibent0@163.com",
+    department: "Sales"
   },
   {
-    "firstName": "Catherina",
-    "lastName": "Swalowe",
-    "email": "cswalowe1@example.com",
-    "department": "Engineering"
+    firstName: "Catherina",
+    lastName: "Swalowe",
+    email: "cswalowe1@example.com",
+    department: "Engineering"
   },
   {
-    "firstName": "Theo",
-    "lastName": "Trill",
-    "email": "ttrill2@sina.com.cn",
-    "department": "Services"
+    firstName: "Theo",
+    lastName: "Trill",
+    email: "ttrill2@sina.com.cn",
+    department: "Services"
   },
   {
-    "firstName": "Elsy",
-    "lastName": "McCrorie",
-    "email": "emccrorie3@netscape.com",
-    "department": "Legal"
+    firstName: "Elsy",
+    lastName: "McCrorie",
+    email: "emccrorie3@netscape.com",
+    department: "Legal"
   },
   {
-    "firstName": "Lorie",
-    "lastName": "Handsheart",
-    "email": "lhandsheart4@fotki.com",
-    "department": "Research and Development"
+    firstName: "Lorie",
+    lastName: "Handsheart",
+    email: "lhandsheart4@fotki.com",
+    department: "Research and Development"
   }
 ];
 // Do not edit the code above.
@@ -52,6 +52,16 @@ var employees = [
 
 //Code Here
 
+let employeeUpdater = employees.filter(function(el, i, arr){
+  if(el.firstName === 'Theo'){
+    employees.splice(2,1)
+  } else if (el.firstName === 'Lorie'){
+el.department = 'HR'
+  }
+  
+})
+
+return employeeUpdater
 
 
 ////////// PROBLEM 2 //////////
@@ -68,8 +78,18 @@ var workplaceAccidents = [12, 56, 44, 3, 29, 56, 56, 3, 7, 12];
     3. Return the updated array.
 */
 
-//Code Here
+let removeDuplicates = []
+for(let i = workplaceAccidents.length-1; i >= 0;  i--){
+  for(let j = workplaceAccidents.length-1; j >= 0; j--){
+    if(workplaceAccidents[i] === workplaceAccidents[j] && i!==j){
+      workplaceAccidents.splice(i,1)
+    }
+  }
+}
 
+
+
+return removeDuplicates
 
 
 ////////// PROBLEM 3 //////////
