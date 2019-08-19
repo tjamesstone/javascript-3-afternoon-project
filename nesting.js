@@ -162,6 +162,13 @@ var myCar = {
 
 //Code Here
 
+function recordCleaner (){
+  for( let i = 0; i < myCar.accidents.length; i++){
+    if(myCar.accidents[i].atFaultForAccident){
+      myCar.accidents[i].atFaultForAccident = false
+    }
+  }return myCar
+}
 
 
 ////////// PROBLEM 5 //////////
