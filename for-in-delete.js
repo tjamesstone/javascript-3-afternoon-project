@@ -93,6 +93,15 @@ function double (obj) {
 
 //Code Here
 
+function secrets (){
+  emptyString = ''
+  for(let prop in obj){
+    if(obj[prop][0] === 's' && obj[prop][1] === 'h'){
+    emptyString.push
+    }
+  }
+}
+
 
 
 /* 
