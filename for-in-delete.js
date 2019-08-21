@@ -134,7 +134,7 @@ function secrets (){
 //Code Here
 function removePassword(obj){
   for(var prop in obj){
-    if(obj[prop] === 'password')[
+    if(prop === 'password')[
       delete obj[prop]
     ]
   } return obj
