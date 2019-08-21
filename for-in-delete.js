@@ -97,9 +97,9 @@ function secrets (){
   emptyString = ''
   for(let prop in obj){
     if(obj[prop][0] === 's' && obj[prop][1] === 'h'){
-    emptyString.push
+    obj.push
     }
-  }
+  }console.log (emptyString)
 }
 
 
@@ -180,9 +180,10 @@ delete deleteTheBigNumbers[prop]
 function startsWithK (obj){
   for(var prop in obj){
     if(obj[prop][0] === 'k'){
-      delete obj[prop]
+      delete prop
     }
-  }return obj
+    
+  }console.log(obj)
 }
 
 
@@ -199,10 +200,4 @@ function startsWithK (obj){
 
 //Code Here\
 
-function hiddenTreasure (obj){
-for(var prop in obj){
-  if(obj[prop] !== "treasure"){
-    delete obj[prop]
-  }
-}
-}
+
