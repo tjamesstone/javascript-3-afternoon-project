@@ -119,11 +119,11 @@ return second
 //Code Here
 
 function numberGroups ({a, b, c}) {
-if (a.length > b.length && c.length) {
+if (a.length > b.length && a.length > c.length) {
   return a
-} else if (b.length > a.length && c.length){
+} else if (b.length > a.length && b.length > c.length){
   return b
-} else if (c.length > a.length && b.length){
+} else if (c.length > a.length && c.length > b.length){
   return c
 }
 }

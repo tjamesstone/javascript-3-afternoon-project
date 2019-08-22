@@ -38,12 +38,13 @@ for(var key in values) {
   Inside the function showValues, write a for in loop that concatenates each of the property values and returns the concatenated string.
 */
 
-function showValues() {
-  let {one, two, three, four, five} = values
- 
-    let str = `${one}${two}${three}${four}${five}`
-    return(str)
-    }
+function showValues( obj ) {
+  var concat = ""
+  for (var key in obj) {
+    concat += obj[key]
+  }
+  return concat
+}
     
   
 
@@ -99,13 +100,14 @@ function double (obj) {
 
 //Code Here
 
-function secrets (){
-  emptyString = ''
-  for(let prop in obj){
-    if(obj[prop][0] === 's' && obj[prop][1] === 'h'){
-    emptyString.push
+let secrets = (obj) => {
+  let sentence = ""
+  for (var key in obj) {
+    key.toString()
+    if (key.substring(0,2) === "sh") {
+      sentence += obj[key]
     }
-  }console.log (emptyString)
+  } return sentence
 }
 
 
@@ -183,13 +185,13 @@ delete deleteTheBigNumbers[prop]
 
 //Code Here
 
-function startsWithK (obj){
-  for(var prop in obj){
-    if(obj[prop][0] === 'k'){
-      delete prop
+let startsWithK = (obj) => {
+  for (var key in obj) {
+    key.toString
+    if (key.substring(0,1) === "k") {
+      delete obj[key]
     }
-    
-  }console.log(obj)
+  } return obj
 }
 
 
@@ -204,6 +206,14 @@ function startsWithK (obj){
   (hint: the method includes() may be of use...)
 */
 
-//Code Here\
+//Code Here
+let hiddenTreasure = (obj) => {
+  for (var key in obj) {
+    if (!obj[key].includes("treasure")) {
+      delete obj[key]
+    }
+  } return obj
+}
+
 
 
