@@ -19,7 +19,7 @@ var values = {
 } 
 
 for(var key in values) {
-  console.log(values[key])
+  // console.log(values[key])
 }
 
 /*
@@ -27,7 +27,7 @@ for(var key in values) {
 */
 
 for(var key in values) {
-  console.log(key)
+  // console.log(key)
 }
 
 
@@ -38,11 +38,17 @@ for(var key in values) {
   Inside the function showValues, write a for in loop that concatenates each of the property values and returns the concatenated string.
 */
 
-function showValues( obj ) {
-  //Code Here
+function showValues() {
+  let {one, two, three, four, five} = values
+ 
+    let str = `${one}${two}${three}${four}${five}`
+    return(str)
+    }
+    
+  
 
   
-}
+
 
 
 
@@ -97,7 +103,7 @@ function secrets (){
   emptyString = ''
   for(let prop in obj){
     if(obj[prop][0] === 's' && obj[prop][1] === 'h'){
-    obj.push
+    emptyString.push
     }
   }console.log (emptyString)
 }
@@ -110,17 +116,17 @@ function secrets (){
   Uncomment the example below to see a for in loop deleting all the properties inside an object.
 */
 
-// var deleteAllThethings = {
-//   one: 1,
-//   two: 2,
-//   three: 3
-// }
+var deleteAllThethings = {
+  one: 1,
+  two: 2,
+  three: 3
+}
 
-// for(var key in deleteAllThethings) {
-//   delete deleteAllThethings[key]
-// }
+for(var key in deleteAllThethings) {
+  delete deleteAllThethings[key]
+}
 
-// console.log(deleteAllThethings)
+console.log(deleteAllThethings)
 
 
 

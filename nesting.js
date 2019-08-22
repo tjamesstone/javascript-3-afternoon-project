@@ -190,15 +190,16 @@ var numsArr = [ [1, 2, 3, 4], [5, 6], [7, 8, 9, 10, 11]];
 
 function looper (){
   for(i =0; i >= numsArr.length; i++){
-    if(numsArr[i][i] %2 === 0){
-      return 'odd'
+    if(numsArr[i][i] %2 !== 0){
+      let numsArr[i] = 'odd'
     }
   }
   for(i =0; i >= numsArr.length; i++){
     if(numsArr[i][i] %2 === 0){
-      return 'even'
+      let numsArr[i] = 'even'
     }
-  }
+    
+  }console.log(numsArr)
 }
 
 
